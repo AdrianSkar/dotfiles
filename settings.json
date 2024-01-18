@@ -1,0 +1,504 @@
+{
+	"editor.fontSize": 16,
+	"editor.tabSize": 2,
+	"workbench.editor.openSideBySideDirection": "right",
+	"svelte.plugin.typescript.diagnostics.enable": false,
+	"editor.mouseWheelZoom": true,
+	"editor.minimap.enabled": false,
+	"workbench.enableExperiments": false,
+	"breadcrumbs.enabled": true,
+	"emmet.triggerExpansionOnTab": true,
+	"emmet.showSuggestionsAsSnippets": true,
+	// Configure file associations to languages (e.g. `"*.extension": "html"`). These have precedence over the default associations of the languages installed.
+	"files.associations": {
+		"*.html": "html",
+		"*.xml": "xml",
+		"**/templates/*.html": "django-html",
+		"**/templates/*": "django-txt",
+		"*.json": "jsonc"
+	},
+	"diffEditor.renderSideBySide": true,
+	"sync.gist": "37f942d514c746253c0aed3542571b7c",
+	"sync.autoUpload": true,
+	"sync.forceUpload": true,
+	"git.enableSmartCommit": true,
+	"editor.insertSpaces": false,
+	//rulers
+	"editor.rulers": [
+		80,
+		120
+	],
+	"workbench.colorCustomizations": {
+		"editorRuler.foreground": "#85c78513"
+	},
+	"editor.wordWrap": "on",
+	"[markdown]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 80,
+		"editor.autoClosingQuotes": "always",
+		"editor.autoClosingOvertype": "always",
+		"editor.quickSuggestions": {
+			"comments": "on",
+			"strings": "on",
+			"other": "on"
+		}
+	},
+	"cSpell.userWords": [
+		"adrianskar",
+		"Autokey",
+		"avif",
+		"Calibri",
+		"cheatsheet",
+		"csrf",
+		"destructure",
+		"devdocs",
+		"forestgreen",
+		"hardlink",
+		"iife",
+		"Khronkite",
+		"mbps",
+		"Prepend",
+		"prepended",
+		"repos",
+		"Skar",
+		"symlink",
+		"Symlinks",
+		"Timeshift",
+		"Unbookmark"
+	],
+	"extensions.ignoreRecommendations": false,
+	"vscode-mysql.enableTelemetry": false,
+	"code-runner.enableAppInsights": false,
+	"editor.tabCompletion": "on",
+	"editor.acceptSuggestionOnEnter": "off",
+	"[sql]": {
+		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+	},
+	"sql-formatter.uppercase": true,
+	"editor.autoClosingOvertype": "always",
+	"editor.fontFamily": "'Cascadia Code', 'Fira Code', 'CodeNewRoman Nerd Font Mono', Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"terminal.integrated.cursorBlinking": true,
+	"sync.quietSync": true,
+	"git.enableCommitSigning": true,
+	"editor.suggest.localityBonus": true,
+	"jshint.options": {
+		"esversion": 6,
+		"devel": true
+	},
+	"quokka.showOutputOnStart": false,
+	"cSpell.enableFiletypes": [
+		"javascript"
+	],
+	"liveServer.settings.donotShowInfoMsg": true,
+	"editor.quickSuggestionsDelay": 300,
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": false
+	},
+	"color-manager.languages": [
+		"css",
+		"html",
+		"javascript",
+		"json",
+		"scss"
+	],
+	// https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments#overview
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "|",
+			"color": "#F4D35D",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "/",
+			"color": "#6081fb",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "To do",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+	// Debugger global settings
+	"launch": {
+		"configurations": [
+			{
+				"type": "node",
+				"request": "launch",
+				"name": "node Launch program",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"program": "${file}"
+			}
+		],
+		"compounds": []
+	},
+	"liveServer.settings.donotVerifyTags": true,
+	"editor.linkedEditing": true,
+	"workbench.editor.pinnedTabSizing": "compact",
+	"window.title": "${dirty}${separator}${activeEditorMedium}${separator}${rootName}",
+	"quokka.suppressExpirationNotifications": true,
+	"quokka.suppressGlyphMarginNotifications": true,
+	// Just to run `py` instead of `python on windows
+	"code-runner.executorMap": {
+		"javascript": "node",
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php": "php",
+		"python": "py -u",
+		"perl": "perl",
+		"perl6": "perl6",
+		"ruby": "ruby",
+		"go": "go run",
+		"lua": "lua",
+		"groovy": "groovy",
+		"powershell": "powershell -ExecutionPolicy ByPass -File",
+		"bat": "cmd /c",
+		"shellscript": "bash",
+		"fsharp": "fsi",
+		"csharp": "scriptcs",
+		"vbscript": "cscript //Nologo",
+		"typescript": "ts-node",
+		"coffeescript": "coffee",
+		"scala": "scala",
+		"swift": "swift",
+		"julia": "julia",
+		"crystal": "crystal",
+		"ocaml": "ocaml",
+		"r": "Rscript",
+		"applescript": "osascript",
+		"clojure": "lein exec",
+		"haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"racket": "racket",
+		"scheme": "csi -script",
+		"ahk": "autohotkey",
+		"autoit": "autoit3",
+		"dart": "dart",
+		"pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		"d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		"haskell": "runhaskell",
+		"nim": "nim compile --verbosity:0 --hints:off --run",
+		"lisp": "sbcl --script",
+		"kit": "kitc --run",
+		"v": "v run",
+		"sass": "sass --style expanded",
+		"scss": "scss --style expanded",
+		"less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+		"FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+	},
+	"wolf.printLoggingEnabled": false,
+	"wolf.logErrors": true,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "~/../css/"
+		}
+	],
+	"liveSassCompile.settings.showOutputWindow": false,
+	"workbench.editor.decorations.colors": true,
+	"python.showStartPage": false,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.autoClosingBrackets": "always"
+	},
+	"beautify.language": {
+		"html": [
+			"htm",
+			"html",
+			"django-html"
+		]
+	},
+	"html.format.indentHandlebars": true,
+	"[html]": {
+		// "editor.defaultFormatter": "vscode.html-language-features"
+		"editor.defaultFormatter": "vscode.html-language-features"
+		// "editor.foldingStrategy": "indentation"
+	},
+	"[md]": {
+		"editor.defaultFormatter": "vscode.markdown-language-features"
+		// "editor.foldingStrategy": "indentation"
+	},
+	"bookmarks.label.suggestion": "suggestWhenSelected",
+	"bookmarks.sideBar.expanded": true,
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook",
+		"git-rebase-todo": "gitlens.rebase",
+		"*.pdf": "pdf.preview"
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"name": "One Dark italic",
+				"scope": [
+					"comment",
+					"entity.other.attribute-name",
+					"keyword",
+					"markup.underline.link",
+					"storage.modifier",
+					"storage.type",
+					"string.url",
+					"variable.language.super",
+					"variable.language.this"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"name": "One Dark italic reset",
+				"scope": [
+					"keyword.operator",
+					"keyword.other.type",
+					"storage.modifier.import",
+					"storage.modifier.package",
+					"storage.type.built-in",
+					"storage.type.function.arrow",
+					"storage.type.generic",
+					"storage.type.java",
+					"storage.type.primitive"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	"[css]": {
+		"editor.defaultFormatter": "aeschli.vscode-css-formatter"
+	},
+	"html.format.templating": true,
+	"firefox.executable": "C:\\Program Files\\Firefox Developer Edition\\firefox.exe",
+	"firefox.profile": "test",
+	"firefox.port": 5500,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"quokka.automaticRestart": true,
+	"cSpell.enabled": true,
+	"terminal.integrated.gpuAcceleration": "on",
+	"quokka.compactMessageOutput": true,
+	"[django-html]": {
+		"editor.defaultFormatter": "batisteo.vscode-django",
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": true,
+			"strings": true
+		}
+	},
+	"diffEditor.ignoreTrimWhitespace": false,
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"tabnine.experimentalAutoImports": true,
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": false,
+		"plaintext": false,
+		"markdown": true,
+		"html": true
+	},
+	"github.copilot.autocomplete.enable": true,
+	"[javascript]": {
+		"editor.autoClosingBrackets": "languageDefined",
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"settingsSync.ignoredSettings": [
+		"workbench.colorTheme"
+	],
+	"settingsSync.ignoredExtensions": [
+		"techer.open-in-browser",
+		"streetsidesoftware.code-spell-checker"
+	],
+	"open-in-browser.default": "firefox",
+	"terminal.integrated.fontFamily": "'Hack Nerd Font Mono', 'FiraMono Nerd Font Mono', Consolas, 'Courier New', monospace",
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"editor.snippetSuggestions": "top",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.suggest.preview": true,
+	"terminal.integrated.profiles.windows": {
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash",
+			"path": "C:\\Program Files\\Git\\bin\\bash.exe"
+		},
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		}
+	},
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"workbench.colorTheme": "One Dark",
+	"terminal.integrated.copyOnSelection": true,
+	"prettier.arrowParens": "avoid",
+	"bookmarks.useWorkaroundForFormatters": true,
+	"errorLens.enabledDiagnosticLevels": [
+		"error",
+		"info"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"prettier.singleQuote": true,
+	"editor.formatOnSave": true,
+	"errorLens.delay": 1000,
+	"editor.guides.bracketPairs": true,
+	"telemetry.telemetryLevel": "off",
+	"eslint.format.enable": true,
+	"files.autoSave": "afterDelay",
+	"eslint.alwaysShowStatus": true,
+	"eslint.lintTask.enable": true,
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
+	"scm.countBadge": "focused",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.sideBar.location": "right",
+	"errorLens.enabled": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.currentLine.enabled": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.scopes": [
+		"document",
+		"containers"
+	],
+	"gitlens.codeLens.enabled": false,
+	"gitlens.statusBar.enabled": false,
+	"gitlens.hovers.enabled": false,
+	"terminal.integrated.shellIntegration.enabled": true,
+	"githubPullRequests.pullBranch": "never",
+	"git.path": "C:\\Program Files\\Git\\mingw64\\bin\\git.exe",
+	"color-manager.autoStartIntellisense": true,
+	"MutableAI.autocomplete.linebyline": true,
+	"emojisense.languages": {
+		"javascript": true,
+		"markdown": true,
+		"html": true,
+		"plaintext": {
+			"markupCompletionsEnabled": false,
+			"emojiDecoratorsEnabled": false
+		},
+		"scminput": true,
+		"git-commit": true
+	},
+	"editor.defaultFormatter": "VisualStudioExptTeam.vscodeintellicode",
+	"prettier.useTabs": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"aws.telemetry": false,
+	"editor.hover.enabled": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorBlinking": "phase",
+	"terminal.integrated.shellIntegration.suggestEnabled": true,
+	"terminal.integrated.smoothScrolling": true,
+	"terminal.integrated.env.windows": {},
+	"terminal.integrated.env.linux": {},
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
+	"console-ninja.openHttpLinksInEditor": false,
+	"aws.suppressPrompts": {
+		"codeWhispererConnectionExpired": true,
+		"codeWhispererNewWelcomeMessage": true
+	},
+	"console-ninja.featureSet": "Community",
+	"editor.stickyScroll.enabled": true,
+	"remote.SSH.defaultExtensions": [
+		"gitpod.gitpod-remote-ssh"
+	],
+	"remote.SSH.remotePlatform": {
+		"adrianskar-scrimbareact-tsmjnjwx2b7.vss.gitpod.io": "linux"
+	},
+	"yaml.customTags": [
+		"!And",
+		"!And sequence",
+		"!If",
+		"!If sequence",
+		"!Not",
+		"!Not sequence",
+		"!Equals",
+		"!Equals sequence",
+		"!Or",
+		"!Or sequence",
+		"!FindInMap",
+		"!FindInMap sequence",
+		"!Base64",
+		"!Join",
+		"!Join sequence",
+		"!Cidr",
+		"!Ref",
+		"!Sub",
+		"!Sub sequence",
+		"!GetAtt",
+		"!GetAZs",
+		"!ImportValue",
+		"!ImportValue sequence",
+		"!Select",
+		"!Select sequence",
+		"!Split",
+		"!Split sequence"
+	],
+	"cmake.options.statusBarVisibility": "compact",
+	"C_Cpp.default.compilerPath": "",
+	"workbench.tree.enableStickyScroll": true,
+	"C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+	// "C_Cpp.errorSquiggles": "Disabled",
+	// "C_Cpp.intelliSenseEngineFallback": "Enabled",
+	"C_Cpp.default.includePath": [
+		"C:\\msys64\\ucrt64\\include"
+	]
+}
